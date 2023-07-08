@@ -1,0 +1,309 @@
+
+Only you can see this message. Congratulations on earning this certification. It's no easy task. Running freeCodeCamp isn't easy either. Nor is it cheap. Help us help you and many other people around the world. Make a tax-deductible supporting donation to our charity today.
+
+Confirm your donation of $5 / month:
+  Secure donation
+
+Or donate with card
+Issued July 7, 2023
+This certifies that
+Oshani
+has successfully completed the freeCodeCamp.org
+Responsive Web Design
+Developer Certification, representing approximately 300 hours of coursework.
+Quincy Larson's Signature
+Quincy Larson
+
+Executive Director, freeCodeCamp.org
+
+Verify this certification at https://freecodecamp.org/certification/Oshani/responsive-web-design
+
+As part of this certification, Oshani built the following projects and got all automated test suites to pass:
+Certifications
+Build a Survey Form	
+View Solution for Build a Survey Form
+Build a Tribute Page	
+View Solution for Build a Tribute Page
+Build a Technical Documentation Page	
+View Solution for Build a Technical Documentation Page
+Build a Product Landing Page	
+View Solution for Build a Product Landing Page
+Build a Personal Portfolio Webpage	
+View Solution for Build a Personal Portfolio Webpage
+If you suspect that any of these projects violate the academic honesty policy, please report this to our team.
+Navigated to Profile | freeCodeCamp.org
+×Close
+Solution for Build a Product Landing Page
+HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+
+<title>Product Landing Page</title>
+<link rel="stylesheet" href="styles.css"/>
+<script src="https://kit.fontawesome.com/4619b3e12f.js" crossorigin="anonymous"></script></head>
+<!-- Here,is link to make the connection between html and icons-->
+
+<body>
+
+<header id="header">   
+<div class="logo"> 
+<img id="header-img" alt="Logo" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"/>
+</div>
+   <nav id="nav-bar" >
+     <ul>
+     <li><a class="nav-link" href="#features">Features</a></li>
+     <li><a class="nav-link" href="#howItWorks">How it Works</a></li>
+     <li><a class="nav-link" href="#pricing">Pricing</a></li>
+     </ul>
+   </nav> 
+  </header>
+
+  <section id="hero"> 
+    <h2>Handcrafted, home-made masterpieces</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input type="email" id="email" placeholder="Enter your email address" name="email" required/>
+    <input type="submit" id="submit" value="GET STARTED"/>
+    </form>
+  </section> 
+
+  <div class="container">
+    <div id="features">
+      <div class="grid">
+
+        <div class="icon">
+          <i class="fa-solid fa-fire"></i>
+          </div>
+
+        <div class="text">
+          <h2>Premium Materials</h2>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+        </div>
+       <div class="grid">
+        <div class="icon">
+          <i class="fa-solid fa-truck"></i>
+          </div>
+
+        <div class="text">
+          <h2>Fast Shipping</h2>
+          <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+          </div>
+          </div>
+       <div class="grid">
+        <div class="icon">
+          <i class="fa-solid fa-battery-full"></i>
+          </div>
+
+        <div class="text">
+          <h2>Quality Assurance</h2>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+          </div>
+
+    </div>
+
+    <div id="howItWorks">
+      
+
+<iframe id="video" height="315" width="500" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen="" title="Product Video"></iframe>
+
+    </div>
+    <div id="pricing">
+    <div class="Product">
+      <div class="level">TENOR TROMBONE</div>
+      <h2>$600</h2>
+      <ol>
+        <li>Lorem Ipsum.</li>
+        <li>Lorem Ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem Ipsum.</li>
+        </ol>
+        <button class="btn">SELECT</button>
+     </div>
+
+     <div class="Product">
+      <div class="level">BASS TROMBONE</div>
+      <h2>$900</h2>
+      <ol>
+        <li>Lorem Ipsum.</li>
+        <li>Lorem Ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem Ipsum.</li>
+        </ol>
+        <button class="btn">SELECT</button>
+     </div>
+
+<div class="Product">
+      <div class="level">VALVE TROMBONE</div>
+      <h2>$1200</h2>
+      <ol>
+        <li>Plays similar to a Trumpet</li>
+        <li>Great for Jazz Bands</li>
+        <li>Lorem Ipsum</li>
+        <li>Lorem Ipsum</li>
+        </ol>
+        <button class="btn">SELECT</button>
+     </div>
+     
+    </div>
+  </div>
+  </body>
+    </html>
+CSS
+body{
+  background-color:#eee;
+  font-family:'Lato', sans-serif;
+}
+
+#header{
+  position:fixed;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.logo{
+  width:60vw;
+}
+
+#header-img{
+  max-width:300px;
+  width:100%;
+  height:100%;
+}
+
+#nav-bar{
+  font-wight:400;
+  width:40vw;
+}
+
+ul{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+
+li{
+  list-style:none;
+}
+
+.nav-link{
+  color:black;
+  text-decoration: none;
+}
+
+#hero, form{
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-text:center;
+}
+
+#hero input[type="email"]{
+  max-width:275px;
+  min-width:100px;
+  width:275px;
+  height:30px;
+}
+
+#hero input[type="submit"]{
+  max-width:150px;
+  width: 100%;
+  height: 30px;
+  background-color:#f1c40f;
+  border:none;
+  font-weight: 900;
+  font-size: 1em;
+}
+
+.features{
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.grid{
+  display: flex;
+  flex-direction:row;
+ 
+
+}
+
+.icon{
+  width:15vw;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.fa-solid{
+  color:darkorange;
+  font-size:50px;
+}
+
+#howItWorks{
+  margin:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#pricing{
+  display:flex;
+  flex-direction:row;
+  width: 100%;
+  justify-content:space-around;
+  margin-top:60px;
+  margin-bottom:90px;
+}
+
+.product{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  width: calc(80%/3);
+  border:1px solid black;
+  margin:20px;
+  border-radius: 3px;
+  
+}
+
+.level{
+  background-color:#ddd;
+  color: black;
+  width:100%;
+  padding: 15px 0;
+  font-weight:700;
+}
+
+ol > li{
+  margin-right:25px;
+
+}
+
+.btn{
+  background-color:#f1c40f;
+  font-weight:400;
+  font-size:1em;
+  border:none;
+  margin:15px 0;
+  width: 30%;
+  height: 30px;
+  min-width:100px;
+}
+
+@media(max-width:700px)
+{
+  #pricing{
+    flex-direction:column;
+    align-items:center;
+  }
+  .product{
+    width:300px;
+  }
+}
